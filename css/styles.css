@@ -1,97 +1,93 @@
-*{
-    box-sizing: border-box;
-    background-color: rgb(138, 173, 243);
-    font-family: 'Lemon', serif;
+* {
+  box-sizing: border-box;
+  background-color: rgb(138, 173, 243);
+  font-family: "Lemon", serif;
 }
-main{
-    margin: 0 auto;
-    margin-top: auto;
-    position: relative;
-}
-
-#pokemonListTitle{
-font-size: xx-large;
+main {
+  margin: 0 auto;
+  margin-top: auto;
+  position: relative;
 }
 
-.button-class{
-margin: 3px auto;
-padding: 10px 30px; 
-display: inline-block;
-border: 2px solid;
-border-radius: 10px;
-text-align: center;
-background-color: red;
-cursor: pointer;
-}
-.pokemon-list{
-margin: 10px 5px;
-padding: 10px 20px;
-align-items: center;
-display: inline-block;
-
-border: 3px solid black;
-border-color: black;
-border-radius: 10px;
+#pokemonListTitle {
+  font-size: xx-large;
 }
 
-
+.button-class {
+  margin: 3px auto;
+  padding: 10px 30px;
+  display: inline-block;
+  border: 2px solid;
+  border-radius: 10px;
+  text-align: center;
+  background-color: red;
+  cursor: pointer;
+}
+.pokemon-list {
+  margin: 10px 5px;
+  padding: 10px 20px;
+  align-items: center;
+  display: inline-block;
+  border: 3px solid black;
+  border-radius: 10px;
+}
 
 @media all and (max-width: 500px) {
-    .grid1 {
-      grid-template-columns: 1fr;
-      grid-gap: 10px;
-    }
-    .grid1-item:last-child {
-      grid-column: auto/auto;
-      grid-row: auto/auto;
-    }
-    h1 {
-      font-size: 22px;
-    }
-    #work-title {
-      position: relative;
-      left: 90px;
-    }
-    .about-table {
-      left: 2%;
-    }
-    #hanoiimg {
-      position: relative;
-      right: 160px;
-    }
+  .grid1 {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
   }
-  @media all and (min-width: 500px) and (max-width: 750px) {
-    .grid1 {
-      grid-template-columns: 1fr 1fr;
-      grid-gap: var(--defsize);
-    }
-    .grid1-item:last-child {
-      grid-column: auto/auto;
-      grid-row: auto/auto;
-    }
-    h1 {
-      font-size: 40px;
-    }
-    #work-title {
-      position: relative;
-      left: 40%;
-      margin: inherit;
-      padding: inherit;
-    }
-    #hanoiimg {
-      position: relative;
-      right: 90px;
-    }
+  .grid1-item:last-child {
+    grid-column: auto/auto;
+    grid-row: auto/auto;
   }
-  @media all and (max-width: 750px) {
-    .grid {
-      grid: 10px;
-    }
-    .grid1-item:last-child {
-      grid-column: auto/auto;
-      grid-row: auto/auto;
-    }
-    h1 {
-      font-size: 22px;
-    }
+  h1 {
+    font-size: 22px;
+  }
+  #work-title {
+    position: relative;
+    left: 90px;
+  }
+  .about-table {
+    left: 2%;
+  }
+  #hanoiimg {
+    position: relative;
+    right: 160px;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid1 {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--defsize);
+  }
+  .grid1-item:last-child {
+    grid-column: auto/auto;
+    grid-row: auto/auto;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  #work-title {
+    position: relative;
+    left: 40%;
+    margin: inherit;
+    padding: inherit;
+  }
+  #hanoiimg {
+    position: relative;
+    right: 90px;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid: 10px;
+  }
+  .grid1-item:last-child {
+    grid-column: auto/auto;
+    grid-row: auto/auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
 }
